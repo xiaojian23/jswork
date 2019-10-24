@@ -1,7 +1,7 @@
 function goldbach(){
     let odd = document.getElementById("odd").value
     let huizhi = parseFloat(document.getElementById('odd').value)
-    if(isNaN(huizhi)){
+    if(isNaN(huizhi)||huizhi<=2||huizhi%2 ==1){
         alert('请输入有效的数字')
         return false
     }else{
