@@ -1,9 +1,16 @@
+function goldbach(){
+    let odd = document.getElementById("odd").value
+    let huizhi = parseFloat(document.getElementById('odd').value)
+    if(isNaN(huizhi)){
+        alert('请输入有效的数字')
+        return false
+    }else{
+         isTrue(odd)
+    }
+   return
+}
 function bach(i){
     var sum = 0;
-    // level = parseFloat(i)&&Number(i)
-    //   if(i% d ==1){
-    //    var i = promot('请输入有效数字')
-    // }
     for(var d=1;d<=i;d++){
         if(i% d == 0){
             sum++;
@@ -15,15 +22,20 @@ function bach(i){
         return false;
     }
     }
-    function goldbach(odd){
-        // level = parseInt(odd)
-        // if(odd% x ==1){
-        //     level.promot("请输入有效数字")
+    function isTrue(odd){
+    //     let ts =parseInt(document.getElementById('odd').value)
+    //     if(isNaN(odd)){
+    //         alert('请输入有效的数字')
+    //         return false
+    //     }else{
+    //         isTrus(odd)
+    //     }
+    //     return
+    // }
 
-        // }
         let str="";
-        odd = document.getElementById("odd").value
-        odd = parseInt(odd);
+        b = document.getElementById("odd").value
+        b = parseInt(odd);
      for(var x=2;x<odd;x++){
         var y =odd-x;
         if(bach(x)&&bach(y)&&x<=y){
