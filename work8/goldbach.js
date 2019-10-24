@@ -34,8 +34,6 @@ function bach(i){
     // }
 
         let str="";
-        b = document.getElementById("odd").value
-        b = parseInt(odd);
      for(var x=2;x<odd;x++){
         var y =odd-x;
         if(bach(x)&&bach(y)&&x<=y){
