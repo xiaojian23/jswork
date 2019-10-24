@@ -7,7 +7,7 @@ function goldbach(){
     }else{
          isTrue(odd)
     }
-   return
+   return true
 }
 function bach(i){
     var sum = 0;
