@@ -1,6 +1,6 @@
 function monkey() {
     let total = document.getElementById("monkeytotal").value
-    let kick = document.getElementById("monkeylick").value
+    let kick = document.getElementById("monkeykick").value
 
     total = parseInt(total) && Number(total)
     kick = parseInt(kick) && Number(kick)
