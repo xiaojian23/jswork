@@ -1,0 +1,20 @@
+
+body {
+    height: 600px;
+    width: 1200px;
+    margin: 0 auto;
+    background: darkgray;
+}
+
+.body h2 {
+    width: 50%;
+    height: 100px;
+
+    margin: 0 auto;
+}
+
+h3 {
+    width: 50%;
+    height: 50%;
+    margin: 0 auto;
+}
