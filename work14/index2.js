@@ -1,6 +1,5 @@
-let time = new Date();
-let minutes = time.getMinutes();
-let endseconds = new Date().getTime() +60*1000*(60-minutes);
+let time = new Date().getMinutes();
+let endseconds = new Date().getTime() +60*1000*(60-time);
 
 let d = h = m = s = 0;
 let id = setInterval(seckill, 1000);
