@@ -134,7 +134,7 @@
         this.del = find.className('del');
         this.data = data;
         this.name.textContent = data.name;
-        this.price, textContent = data.price.toFixed(2);
+        this.price. textContent = data.price.toFixed(2);
         this.num.textContent = data.num;
     }
     Item.prototype = {

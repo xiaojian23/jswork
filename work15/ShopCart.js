@@ -108,14 +108,14 @@
                 this.items[i].check.checked = true;
             }
             this.updateTotal();
-        },
-        //全不选
-        uncheckAll: function () {
-            for (let i in this.items) {
-                this.itens[i].check.checked = false;
-            }
-            this.updateTotal();
         }
+        //全不选
+        // uncheckAll: function () {
+        //     for (let i in this.items) {
+        //         this.items[i].check.checked = false;
+        //     }
+        //     this.updateTotal();
+        // }
     };
 
     function Item(tmp, data) {
@@ -130,7 +130,7 @@
         this.del = find.className('del');
         this.data = data;
         this.name.textContent = data.name;
-        this.price, textContent = data.price.toFixed(2);
+        this.price. textContent = data.price.toFixed(2);
         this.num.textContent = data.num;
     }
     Item.prototype = {
