@@ -1,20 +1,22 @@
-
 body {
     height: 600px;
     width: 1200px;
     margin: 0 auto;
-    background: darkgray;
+    background: rgb(175, 218, 219,.5);
 }
 
 .body h2 {
     width: 50%;
     height: 100px;
-
     margin: 0 auto;
 }
 
+div {
+    width: 800px;
+    height: 800px;
+   text-align: center;
+}
+
 h3 {
-    width: 50%;
-    height: 50%;
-    margin: 0 auto;
+     color: royalblue;
 }
