@@ -29,7 +29,7 @@ function getRegMsg(name, tips) {
     switch (name) {
         case 'username':
             reg = /^[a-zA-Z]{4,12}$/;
-            msg = { 'success': '用户输入正确', 'error': tips };
+            msg = { 'success': '用户名输入正确', 'error': tips };
             break;
 
         case 'pwd':
@@ -49,7 +49,7 @@ function getRegMsg(name, tips) {
             break;
 
         case 'email':
-            reg = /^(\w+(\_|\-|\.)*)+@(\w+(\-)?)+(\.\w{3})+$/;
+            reg = /^(\w+(\_|\-|\.)*)+@(\w+(\-)?)+(\.\w{2})+$/;
             msg = { 'success': '邮箱输入正确', 'error': tips };
             break;
     }
@@ -61,5 +61,5 @@ function success(obj, msg) {
 }
 function error(obj, msg) {
     obj.className = 'error';
-    obj.innerHTML = msg + ',请重新输入';
+    obj.innerHTML = msg + '，请重新输入';
 }
