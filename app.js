@@ -7,7 +7,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
     extended: false
 }));
-
+//work19
 app.use(express.static('../uploads'))
 const multer = require('multer');
 var storage = multer.diskStorage({
@@ -27,7 +27,7 @@ app.post('/upload', upload.single('file'), function (req, res, next) {
     console.log("file name is" + file.filename);
     res.json('/' + file.filename);
 })
-
+//
 app.post('/formBuilder', function (req, res) {
     console.log(req.body)
     res.send(req.body)
@@ -79,7 +79,7 @@ const openDefaultBrowser = function (url) {
     }
 }
 openDefaultBrowser('http://localhost:8080')
-
+//work19-1
 var ws = require("nodejs-websocket")
 let id = 0
 
@@ -108,3 +108,4 @@ function broaadcast(server, msg) {
         conn.sendText(msg)
     })
 }
+//
